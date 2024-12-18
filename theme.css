@@ -1,14 +1,4 @@
-/* Fonts : Inter, Oswald, Bebas Neue */
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap");
-
-/* Font: Exo 2  */
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
-
-/* Font: Big Shoulders Text */
-/* @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&display=swap"); */
-
-/* Font: Anonymous Pro  */
-/* @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"); */
 
 :root {
 	/* --font-header: "Oswald"; */
@@ -16,19 +6,30 @@
 	--font-default: "Exo 2";
 
 	/* User Defined Colors  */
+	/* INFO: used for the accents  */
 	--col-user-green: #0dff00;
 	--col-user-light-blue: #7de0ff;
+	--col-user-orange: #ff2301;
+	--col-user-gray: #4d4d4d;
+	--col-user-pink: #ff00b4;
+	--col-user-barbie-pink: #ed0282;
+	--col-user-light-pink: #ff7ec5;
+	--col-user-sulphur: #ccfd54;
+	--col-user-turquoise: #30d5c8;
+	--col-user-yellow: #f7c110;
+	--col-user-white: #ffffff;
+	--col-user-red: #ff0012;
 
 	/* Text Formatting Colors  */
 	--col-bold: #ff0012;
-	--col-italic: #3de2aa;
-	--col-highlighted-bg: #0dff00;
+	--col-italic: var(--col-user-turquoise);
+	--col-highlighted-bg: var(--col-user-yellow);
 	--col-muted: #d9d9d9;
-	--col-text-normal: #7de0ff;
+	--col-text-normal: var(--col-user-light-blue);
 	--col-text-selection: #3c03c9;
-	--col-faint: #a6a6a6;
-	--col-accent: #ff2301;
-	--col-accent-hover: #ff2310;
+	--col-faint: var(--col-user-gray);
+	--col-accent: var(--col-user-orange);
+	--col-accent-hover: var(--col-user-orange);
 	--col-on-accent: #0a0a0a;
 
 	/* Background Colors */
@@ -36,20 +37,52 @@
 	--col-background-dark-secondary: #04060b;
 	--col-background-light-primary: #fafafa;
 	--col-background-light-secondary: #fafafa;
-	--col-hashtag: #ffffff;
+	--col-hashtag: var(--col-user-white);
+
+	--title-weight: 700;
+
+	--col-user-light-cream: #e48e97;
+	--col-user-black: #000000;
+
+	--col-callout-border: var(--col-user-light-blue);
+	/* Bright blue with 100% opacity */
+
+	--blockquote-color: var(--col-user-turquoise);
+
+	--tag-color: var(--col-user-white);
 }
 
 body {
 	--font-default: "Exo 2";
+	--sidebar-markdown-font-size: 18px;
 	font-weight: 400;
 	letter-spacing: 0.1em;
 	font-size: 24px;
 	line-height: 3.1em;
+	--file-line-width: 1000px;
+
+	--code-background: var(--col-user-black);
+	--code-normal: var(--col-user-barbie-pink);
+	--code-comment: var(--col-user-gray);
+	--code-function: var(--col-user-barbie-pink);
+	--code-important: var(--col-user-green);
+	--code-keyword: var(--col-user-yellow);
+	--code-operator: var(--col-user-red);
+	--code-property: var(--col-user-turquoise);
+	--code-punctuation: var(--col-user-light-cream);
+	--code-string: var(--col-user-green);
+	--code-tag: var(--col-user-light-pink);
+	--code-value: var(--col-user-green);
+
+	/* Table Configurations */
+	--table-header-color: var(--col-user-barbie-pink);
+	--table-header-weight: 900;
+	--table-text-color: var(--col-user-green);
 }
 
 .cm-active {
 	text-shadow:
-		0 0 0 5px #ffffff,
+		0 0 0 5px var(--col-user-white),
 		0 0 0 10px #ccfd54,
 		0 0 0 15px #a5db22;
 }
@@ -60,17 +93,17 @@ body {
 	--background-secondary: var(--col-background-dark-secondary);
 
 	/* === Title Styles === */
-	--h1-weight: var(--font-black);
+	--h1-weight: var(--title-weight);
 	/* Font weight for H1 */
-	--h2-weight: var(--font-black);
+	--h2-weight: var(--title-weight);
 	/* Font weight for H2 */
-	--h3-weight: var(--font-black);
+	--h3-weight: var(--title-weight);
 	/* Font weight for H3 */
-	--h4-weight: var(--font-black);
+	--h4-weight: var(--title-weight);
 	/* Font weight for H4 */
-	--h5-weight: var(--font-black);
+	--h5-weight: var(--title-weight);
 	/* Font weight for H5 */
-	--h6-weight: var(--font-black);
+	--h6-weight: var(--title-weight);
 	/* Font weight for H6 */
 
 	/* === Title Sizes === */
@@ -102,7 +135,7 @@ body {
 	/* Font family for H6 */
 
 	/* === Text Formatting Colors === */
-	--bold-color: var(--col-bold);
+	--bold-color: var(--col-user-barbie-pink);
 	/* Bold text color */
 	--italic-color: var(--col-italic);
 	/* Italic text color */
@@ -113,9 +146,9 @@ body {
 	--text-highlight-bg: var(--col-highlighted-bg);
 	/* Background for highlighted text */
 	--text-muted: var(--col-muted);
-	/* Muted text color */
-	--text-accent: var(--col-accent);
-	/* Accent text color */
+	/* Muted text color *
+  --text-accent: var(--col-accent);
+  /* Accent text color */
 	--text-accent-hover: var(--col-accent-hover);
 	/* Accent text hover color */
 	--text-on-accent: var(--col-on-accent);
@@ -138,7 +171,7 @@ body {
 	/* Text color for selected nav item */
 
 	/* === Accent Color Variables === */
-	--accent-h: 117;
+	--accent-h: 360;
 	/* Hue for accent color (HSL format) */
 	--accent-s: 100%;
 	/* Saturation for accent color */
@@ -150,6 +183,14 @@ body {
 	/* Default text color on accent background */
 	--text-on-accent-inverted: var(--col-highlighted-bg);
 	/* Inverted text color on accent */
+
+	--link-color: var(--col-user-barbie-pink);
+	--link-external-color: var(--col-user-barbie-pink);
+}
+
+.cm-underline,
+.cm-link {
+	color: var(--col-user-barbie-pink);
 }
 
 .theme-light {
@@ -160,7 +201,7 @@ body {
 .cm-hashtag {
 	color: var(--col-hashtag);
 	/* Darker pink color for better contrast with the glow */
-	font-weight: 900;
+	font-weight: var(--title-weight);
 	/* Set bold font weight */
 	font-size: 0.85em;
 	/* Set the font size to 85% of the parent element's font size */
@@ -193,13 +234,13 @@ body {
 
 .metadata-property:hover {
 	font-size: 1.1em;
-	font-weight: 900;
+	font-weight: var(--title-weight);
 }
 
 .cm-em,
 .cm-strong,
 .cm-strikethrough {
-	color: var(--col-user-green);
+	color: var(--col-user-barbie-pink);
 }
 
 .cm-s-obsidian span.cm-highlight,
@@ -214,55 +255,46 @@ body {
 .cm-list-2,
 .cm-list-3 {
 	letter-spacing: 0.025em;
-	color: #f7c110;
+	color: var(--col-user-light-pink);
 	font-style: unset;
 }
 
 .cm-header {
 	color: #e5f9ff;
-	/* color: #ffffff; */
+	/* color: var(--col-user-white); */
 	letter-spacing: 0.025em;
 
 	text-shadow:
-		0 0 5px #7de0ff,
-		0 0 15px #66bbd6,
-		0 0 30px #66828d;
+		0 0 2px #7de0ff,
+		0 0 4px #66bbd6,
+		0 0 6px #66828d;
 }
 
 .list-number {
 	font-weight: 800;
-	color: var(--col-user-green);
-}
-
-/* FIX: inline code levels  */
-.cm-inline-code {
-	color: #33cc66;
+	color: var(--col-user-barbie-pink);
 }
 
 .HyperMD-codeblock,
 .HyperMD-codeblock-begin,
 .HyperMD-codeblock-begin-bg,
 .HyperMD-codeblock-bg {
-	background-color: #ffffff;
-	color: #ffffff;
+	background-color: var(--col-user-white);
+	color: var(--col-user-white);
 }
 
 .multi-select-pill {
-	color: #ffffff;
+	color: var(--col-user-white);
 	padding-left: 2px;
 	padding-top: 2px;
 	padding-bottom: 2px;
 	padding-right: 2px;
 }
 
-.cm-link {
-	/* FIX: cm-link direct manipulation */
-	font-weight: bolder;
-}
-
 .callout-content {
 	font-size: 0.9em !important;
 	padding: 3px 15px !important;
+	font-weight: 450;
 }
 
 .callout-title {
@@ -274,41 +306,113 @@ body {
 	padding: 15px;
 	border-radius: 15px;
 
-	/* Glassy effect */
-	border: 2px solid rgba(255, 0, 0, 0.5);
-	/* Semi-transparent border */
-	background: rgba(0, 0, 0, 0.6);
-	/* Semi-transparent black background */
-	backdrop-filter: blur(10px);
-	/* Blur effect */
-	-webkit-backdrop-filter: blur(10px);
-	/* Ensure compatibility with Safari */
-	/* color: var(--col-user-green); */
-	color: pink;
+	border: 2px solid var(--col-callout-border);
+	background: #000000;
+	color: var(--col-user-turquoise);
 	/* Text color for contrast */
 }
 
 .callout-title-inner {
-	color: red;
+	color: var(--col-user-sulphur);
 	font-weight: 600;
+}
+
+.suggestion-item {
+	font-size: 16px;
+	padding: 10px;
+	margin: 5px;
+	line-height: 1.25em;
 }
 
 .suggestion-highlight {
 	color: black;
-	background-color: var(--col-user-green);
+	background-color: var(--col-user-turquoise);
 }
 
 .suggestion-item.is-selected {
 	background-color: black;
-	color: var(--col-user-green);
+	color: var(--col-user-turquoise);
 }
 
 .suggestion-hotkey {
-	background-color: var(--col-user-green);
+	background-color: var(--col-user-turquoise);
 	color: black;
 	font-weight: bold;
 }
 
 .suggestion-title {
+	color: var(--col-user-turquoise);
+}
+
+em {
+	color: var(--col-user-barbie-pink);
+}
+
+del {
+	color: var(--col-user-barbie-pink);
+}
+
+.el-ul,
+.el-ol {
+	color: var(--col-user-barbie-pink);
+	font-weight: 600;
+}
+
+ol>li::marker,
+ul>li::marker {
 	color: var(--col-user-green);
+	font-weight: 800;
+}
+
+/* TODO : markdown table configuraitions */
+
+tr {
+	color: var(--col-user-light-blue);
+}
+
+/* FIX: blockquote */
+
+.cm-quote {
+	font-weight: 600;
+	font-style: oblique;
+	font-size: 1.05em;
+	color: var(--blockquote-color);
+}
+
+.tag {
+	color: #ffffff;
+	/* Darker pink color for better contrast with the glow */
+	font-weight: var(--title-weight);
+	/* Set bold font weight */
+	font-size: 0.85em;
+	/* Set the font size to 85% of the parent element's font size */
+	padding-top: 2px;
+	/* Add 2px padding to the top of the element */
+	padding-bottom: 2px;
+	/* Add 2px padding to the bottom of the element */
+	padding-left: 1px;
+	/* Add 1px padding to the left of the element */
+	padding-right: 1px;
+	/* Add 1px padding to the right of the element */
+	text-shadow:
+		0 0 5px #f80e85,
+		0 0 10px #f80e85,
+		0 0 15px #f80e85,
+		0 0 20px #ff00ff;
+
+	transition:
+		font-size 0.3s ease,
+		transform 0.3s ease;
+	/* Smooth transition for font size and scaling */
+}
+
+.tag:hover {
+	font-size: 1em;
+	/* Increase font size on hover */
+	transform: scale(1.1);
+	/* Slightly scale up the entire tag for emphasis */
+}
+
+.workspace-tab-header-container {
+	background-color: #000000;
 }
