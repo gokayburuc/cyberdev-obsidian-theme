@@ -1,427 +1,191 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  /* --font-header: "Oswald"; */
-  --font-header: "Exo 2";
-  --font-default: "Exo 2";
+	--font-header: "Exo 2";
+	--font-default: "Exo 2";
 
-  /* User Defined Colors  */
-  /* INFO: used for the accents  */
-  --col-user-green: #0dff00;
-  --col-user-light-blue: #7de0ff;
-  --col-user-orange: #ff2301;
-  --col-user-gray: #4d4d4d;
-  --col-user-pink: #ff00b4;
-  --col-user-barbie-pink: #ed0282;
-  --col-user-light-pink: #ff7ec5;
-  --col-user-sulphur: #ccfd54;
-  --col-user-turquoise: #30d5c8;
-  --col-user-yellow: #f7c110;
-  --col-user-white: #ffffff;
-  --col-user-red: #ff0012;
+	/* usr Defined Colors */
 
-  /* Text Formatting Colors  */
-  --col-bold: #ff0012;
-  --col-italic: var(--col-user-turquoise);
-  --col-highlighted-bg: var(--col-user-yellow);
-  --col-muted: #d9d9d9;
-  --col-text-normal: var(--col-user-light-blue);
-  --col-text-selection: #3c03c9;
-  --col-faint: var(--col-user-gray);
-  --col-accent: var(--col-user-orange);
-  --col-accent-hover: var(--col-user-orange);
-  --col-on-accent: #0a0a0a;
+	/* Amoled Colors */
+	--col-amoled-black: #000000;
+	--col-amoled-black-alt: #0d0d0d;
+	--col-amoled-white: #ffffff;
+	--col-amoled-green-bg: #001913;
+	--col-amoled-green-alt: #007e5d;
+	--col-amoled-green-bg-alt: #061310;
 
-  /* Background Colors */
-  --col-background-dark-primary: #04060b;
-  --col-background-dark-secondary: #04060b;
-  --col-background-light-primary: #fafafa;
-  --col-background-light-secondary: #fafafa;
-  --col-hashtag: var(--col-user-white);
+	/* neon colors */
+	--col-neon-cyan: #00fcff;
+	--col-neon-cyan-alt: #93ffff;
+	--col-neon-pink: #ff23ff;
+	--col-neon-pink-alt: #ff83ff;
+	--col-neon-blue: #0000ac;
+	--col-neon-white: #fafafa;
 
-  --title-weight: 700;
+	/* Background Colors */
+	--col-background-dark-primary: var(--col-amoled-black);
+	--col-background-dark-secondary: var(--col-amoled-black);
+	--col-background-light-primary: #fafafa;
+	--col-background-light-secondary: #fafafa;
 
-  --col-user-light-cream: #e48e97;
-  --col-user-black: #000000;
+	/* Text Formatting Colors */
+	--col-bold: var(--col-amoled-white);
+	--col-italic: var(--col-amoled-white);
+	--col-highlighted-bg: var(--col-amoled-white);
+	--col-muted: #009770;
+	--col-text-normal: #00e2a8;
+	--col-text-selection: #b0daf5;
+	--col-faint: #b0daf5;
+	--col-accent: var(--col-amoled-white);
+	--col-accent-hover: var(--col-neon-cyan-alt);
+	--col-hashtag: #00c995;
 
-  --col-callout-border: var(--col-user-light-blue);
-  /* Bright blue with 100% opacity */
-
-  --blockquote-color: var(--col-user-turquoise);
-
-  --tag-color: var(--col-user-white);
+	/* TITLE */
+	--title-weight: 600;
 }
 
 body {
-  --font-ui-small: 16px;
-  --font-default: "Exo 2";
-  --sidebar-markdown-font-size: 18px;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  font-size: 24px;
-  line-height: 3.1em;
-  --file-line-width: 1000px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
 
-  --code-background: var(--col-user-black);
-  --code-normal: var(--col-user-barbie-pink);
-  --code-comment: var(--col-user-gray);
-  --code-function: var(--col-user-barbie-pink);
-  --code-important: var(--col-user-green);
-  --code-keyword: var(--col-user-yellow);
-  --code-operator: var(--col-user-red);
-  --code-property: var(--col-user-turquoise);
-  --code-punctuation: var(--col-user-light-cream);
-  --code-string: var(--col-user-green);
-  --code-tag: var(--col-user-light-pink);
-  --code-value: var(--col-user-green);
+	/* LINE */
+	--file-line-width: 1000px;
 
-  /* Table Configurations */
-  --table-header-color: var(--col-user-barbie-pink);
-  --table-header-weight: 900;
-  --table-text-color: var(--col-user-green);
-}
+	/* CODE */
+	--code-background: #010a0a;
+	--code-normal: var(--col-amoled-white);
+	--code-comment: gray;
+	--code-function: #ff334b;
+	--code-important: gray;
+	--code-keyword: orange;
+	--code-operator: #b8d65c;
+	--code-property: var(--text-normal);
+	--code-punctuation: #ffb800;
+	--code-string: #33cc66;
+	--code-tag: orange;
+	--code-value: #1c62ff;
 
-.cm-active {
-  text-shadow:
-    0 0 0 5px var(--col-user-white),
-    0 0 0 10px #ccfd54,
-    0 0 0 15px #a5db22;
+	/* TABLE */
+	--table-header-color: var(--col-usr-barbie-pink);
+	--table-header-weight: 900;
+	--table-text-color: var(--col-usr-green);
+
+	/* BLOCKQUOTE */
+	--blockquote-background-color: var(--col-amoled-green-bg-alt);
+	--blockquote-border-thickness: 3px;
+	--blockquote-border-color: var(--col-amoled-white);
+	--blockquote-font-style: italic;
+	--blockquote-color: var(--col-amoled-white);
+
+	/* CALLOUT */
+	--callout-border-width: 2px;
+	--callout-border-opacity: 90%;
+	--callout-radius: 10px;
+	--callout-title-padding: 10px;
+	--callout-title-size: 1.25em;
+	--callout-title-weight: 600;
+	--callout-content-padding: 10px;
+
+	/* RIBBON */
+	--ribbon-padding: 10px;
+	--ribbon-background: var(--col-background-dark-primary);
+	--ribbon-background-collapsed: var(--col-background-dark-primary);
+	--ribbon-width: 50px;
+
+	--metadata-label-text-color: var(--col-amoled-white:);
+
+	/* tag */
+	--tag-color: var(--col-amoled-white);
+	--tag-background: var(--col-background-dark-primary);
 }
 
 .theme-dark {
-  /* === Background Colors === */
-  --background-primary: var(--col-background-dark-primary);
-  --background-secondary: var(--col-background-dark-secondary);
+	--font-text-size: 24px;
+	--font-ui-size: 24px;
 
-  /* === Title Styles === */
-  --h1-weight: var(--title-weight);
-  /* Font weight for H1 */
-  --h2-weight: var(--title-weight);
-  /* Font weight for H2 */
-  --h3-weight: var(--title-weight);
-  /* Font weight for H3 */
-  --h4-weight: var(--title-weight);
-  /* Font weight for H4 */
-  --h5-weight: var(--title-weight);
-  /* Font weight for H5 */
-  --h6-weight: var(--title-weight);
-  /* Font weight for H6 */
+	--background-primary: var(--col-background-dark-primary);
+	--background-secondary: var(--col-background-dark-secondary);
 
-  /* === Title Sizes === */
-  --h1-size: 2.5em;
-  /* Font size for H1 */
-  --h2-size: 2.25em;
-  /* Font size for H2 */
-  --h3-size: 2em;
-  /* Font size for H3 */
-  --h4-size: 1.75em;
-  /* Font size for H4 */
-  --h5-size: 1.5em;
-  /* Font size for H5 */
-  --h6-size: 1.25em;
-  /* Font size for H6 */
+	/* TITLES */
+	--h1-color: var(--col-neon-white);
+	--h1-font: var(--font-header);
+	--h1-size: 2.5em;
+	--h1-weight: var(--title-weight);
+	--h2-color: var(--col-neon-white);
+	--h2-font: var(--font-header);
+	--h2-size: 2.25em;
+	--h2-weight: var(--title-weight);
+	--h3-color: var(--col-neon-white);
+	--h3-font: var(--font-header);
+	--h3-size: 2em;
+	--h3-weight: var(--title-weight);
+	--h4-color: var(--col-neon-white);
+	--h4-font: var(--font-header);
+	--h4-size: 1.75em;
+	--h4-weight: var(--title-weight);
+	--h5-color: var(--col-neon-white);
+	--h5-font: var(--font-header);
+	--h5-size: 1.5em;
+	--h5-weight: var(--title-weight);
+	--h6-color: var(--col-neon-white);
+	--h6-font: var(--font-header);
+	--h6-size: 1.25em;
+	--h6-weight: var(--title-weight);
 
-  /* === Font Types for Titles === */
-  --h1-font: var(--font-header);
-  /* Font family for H1 */
-  --h2-font: var(--font-header);
-  /* Font family for H2 */
-  --h3-font: var(--font-header);
-  /* Font family for H3 */
-  --h4-font: var(--font-header);
-  /* Font family for H4 */
-  --h5-font: var(--font-header);
-  /* Font family for H5 */
-  --h6-font: var(--font-header);
-  /* Font family for H6 */
+	/* TEXT */
+	--bold-color: var(--col-amoled-white);
+	--italic-color: var(--col-amoled-white);
 
-  /* === Text Formatting Colors === */
-  --bold-color: var(--col-user-barbie-pink);
-  /* Bold text color */
-  --italic-color: var(--col-italic);
-  /* Italic text color */
-  --text-normal: var(--col-text-normal);
-  /* Normal text color */
-  --text-selection: var(--col-text-selection);
-  /* Highlighted text selection color */
-  --text-highlight-bg: var(--col-highlighted-bg);
-  /* Background for highlighted text */
-  --text-muted: var(--col-muted);
-  /* Muted text color *
-  --text-accent: var(--col-accent);
-  /* Accent text color */
-  --text-accent-hover: var(--col-accent-hover);
-  /* Accent text hover color */
-  --text-on-accent: var(--col-on-accent);
-  /* Text color on an accent background */
-  --text-faint: var(--col-faint);
-  /* Faint text color */
+	--text-normal: var(--col-text-normal);
+	--text-selection: var(--col-amoled-green-bg-alt);
+	--text-highlight-bg: var(--col-amoled-green-bg);
+	--text-muted: var(--col-amoled-green-alt);
+	--text-accent: var(--col-amoled-white);
+	--text-accent-hover: var(--col-amoled-green-bg-alt);
+	--text-on-accent: var(--col-amoled-green-bg-alt);
+	--text-faint: var(--col-amoled-green-alt);
 
-  /* === Navigation Item Options === */
-  --nav-item-size: 1.05em;
-  /* Navigation item font size */
-  --nav-item-color: #00dee3;
-  /* Navigation item text color */
-  --nav-item-color-hover: #cac958;
-  /* Navigation item text color on hover */
-  --nav-item-background-hover: #050505;
-  /* Navigation item background on hover */
-  --nav-item-background-selected: #f8f60e;
-  /* Background color for selected nav item */
-  --nav-item-color-selected: #f32de5;
-  /* Text color for selected nav item */
+	/* status-bar */
+	--status-bar-background: var(--col-amoled-black);
 
-  /* === Accent Color Variables === */
-  --accent-h: 360;
-  /* Hue for accent color (HSL format) */
-  --accent-s: 100%;
-  /* Saturation for accent color */
-  --accent-l: 50%;
-  /* Lightness for accent color */
+	--titlebar-background: var(--col-amoled-black);
 
-  /* === Text on Accent Background === */
-  --text-on-accent: black;
-  /* Default text color on accent background */
-  --text-on-accent-inverted: var(--col-highlighted-bg);
-  /* Inverted text color on accent */
+	/* NAV ITEM STANDART */
+	--nav-item-size: 100%;
+	--nav-item-color: var(--col-text-normal);
 
-  --link-color: var(--col-user-barbie-pink);
-  --link-external-color: var(--col-user-barbie-pink);
-}
+	/* NAV ITEM HOVER  */
+	--nav-item-color-hover: var(--col-amoled-white);
+	--nav-item-background-hover: var(--col-amoled-green-bg);
 
-.cm-underline,
-.cm-link {
-  color: var(--col-user-barbie-pink);
-}
+	/* NAV ITEM SELECTED */
+	--nav-item-background-selected: var(--col-amoled-green-bg-alt);
+	--nav-item-color-selected: var(--col-amoled-green-bg-alt);
 
-.theme-light {
-  --background-primary: var(--col-background-light-primary);
-  --background-secondary: var(--col-background-light-secondary);
-}
+	/* Nav item active */
+	--nav-item-background-active: var(--col-amoled-green-bg-alt);
+	--nav-item-color-active: var(--col-amoled-white);
 
-.cm-hashtag {
-  color: var(--col-hashtag);
-  /* Darker pink color for better contrast with the glow */
-  font-weight: var(--title-weight);
-  /* Set bold font weight */
-  font-size: 0.85em;
-  /* Set the font size to 85% of the parent element's font size */
-  padding-top: 2px;
-  /* Add 2px padding to the top of the element */
-  padding-bottom: 2px;
-  /* Add 2px padding to the bottom of the element */
-  padding-left: 1px;
-  /* Add 1px padding to the left of the element */
-  padding-right: 1px;
-  /* Add 1px padding to the right of the element */
-  text-shadow:
-    0 0 5px #f80e85,
-    0 0 10px #f80e85,
-    0 0 15px #f80e85,
-    0 0 20px #ff00ff;
+	/* LINK */
+	--link-color: var(--col-amoled-white);
+	--link-external-color: var(--col-amoled-white);
 
-  transition:
-    font-size 0.3s ease,
-    transform 0.3s ease;
-  /* Smooth transition for font size and scaling */
-}
+	/* PARAGRAPH SPACING */
+	--p-spacing: 0.5em;
+	--heading-spacing: 0.5em;
 
-.cm-hashtag:hover {
-  font-size: 1em;
-  /* Increase font size on hover */
-  transform: scale(1.1);
-  /* Slightly scale up the entire tag for emphasis */
-}
+	/* FONT - CSS variables */
+	--font-interface-theme: "Exo 2";
+	--font-text-theme: "Exo 2";
+	--font-monospace-theme: "Exo 2";
 
-.metadata-property:hover {
-  font-size: 1.1em;
-  font-weight: var(--title-weight);
-}
+	--color-accent: var(--col-amoled-white);
+	--checklist-done-color: var(--col-amoled-green-bg);
 
-.cm-em,
-.cm-strong,
-.cm-strikethrough {
-  color: var(--col-user-barbie-pink);
-}
-
-.cm-s-obsidian span.cm-highlight,
-.markdown-rendered mark {
-  color: black;
-  font-size: 1.05em;
-  font-weight: 500;
-}
-
-/* INFO: list items by indent levels  */
-.cm-list-1,
-.cm-list-2,
-.cm-list-3 {
-  letter-spacing: 0.025em;
-  color: var(--col-user-light-pink);
-  font-style: unset;
-}
-
-.cm-header {
-  color: #e5f9ff;
-  /* color: var(--col-user-white); */
-  letter-spacing: 0.025em;
-
-  text-shadow:
-    0 0 2px #7de0ff,
-    0 0 4px #66bbd6,
-    0 0 6px #66828d;
-}
-
-.list-number {
-  font-weight: 800;
-  color: var(--col-user-barbie-pink);
-}
-
-.HyperMD-codeblock,
-.HyperMD-codeblock-begin,
-.HyperMD-codeblock-begin-bg,
-.HyperMD-codeblock-bg {
-  background-color: var(--col-user-white);
-  color: var(--col-user-white);
-}
-
-.multi-select-pill {
-  color: var(--col-user-white);
-  padding-left: 2px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-right: 2px;
+	--table-header-background: var(--col-amoled-green-bg-alt);
+	--table-header-color: var(--col-amoled-white);
 }
 
 .callout-content {
-  font-size: 0.9em !important;
-  padding: 3px 15px !important;
-  font-weight: 450;
-}
-
-.callout-title {
-  font-size: 1.25em;
-  font-weight: 800;
-}
-
-.callout {
-  padding: 15px;
-  border-radius: 15px;
-
-  border: 2px solid var(--col-callout-border);
-  background: #000000;
-  color: var(--col-user-turquoise);
-  /* Text color for contrast */
-}
-
-.callout-title-inner {
-  color: var(--col-user-sulphur);
-  font-weight: 600;
-}
-
-.suggestion-item {
-  font-size: 16px;
-  padding: 10px;
-  margin: 5px;
-  line-height: 1.25em;
-}
-
-.suggestion-highlight {
-  color: black;
-  background-color: var(--col-user-turquoise);
-}
-
-.suggestion-item.is-selected {
-  background-color: black;
-  color: var(--col-user-turquoise);
-}
-
-.suggestion-hotkey {
-  background-color: var(--col-user-turquoise);
-  color: black;
-  font-weight: bold;
-}
-
-.suggestion-title {
-  color: var(--col-user-turquoise);
-}
-
-em {
-  color: var(--col-user-barbie-pink);
-}
-
-del {
-  color: var(--col-user-barbie-pink);
-}
-
-.el-ul,
-.el-ol {
-  color: var(--col-user-barbie-pink);
-  font-weight: 600;
-}
-
-ol > li::marker,
-ul > li::marker {
-  color: var(--col-user-green);
-  font-weight: 800;
-}
-
-/* TODO : markdown table configuraitions */
-
-tr {
-  color: var(--col-user-light-blue);
-}
-
-/* FIX: blockquote */
-
-.cm-quote {
-  font-weight: 600;
-  font-style: oblique;
-  font-size: 1.05em;
-  color: var(--blockquote-color);
-}
-
-.tag {
-  color: #ffffff;
-  /* Darker pink color for better contrast with the glow */
-  font-weight: var(--title-weight);
-  /* Set bold font weight */
-  font-size: 0.85em;
-  /* Set the font size to 85% of the parent element's font size */
-  padding-top: 2px;
-  /* Add 2px padding to the top of the element */
-  padding-bottom: 2px;
-  /* Add 2px padding to the bottom of the element */
-  padding-left: 1px;
-  /* Add 1px padding to the left of the element */
-  padding-right: 1px;
-  /* Add 1px padding to the right of the element */
-  text-shadow:
-    0 0 5px #f80e85,
-    0 0 10px #f80e85,
-    0 0 15px #f80e85,
-    0 0 20px #ff00ff;
-
-  transition:
-    font-size 0.3s ease,
-    transform 0.3s ease;
-  /* Smooth transition for font size and scaling */
-}
-
-.tag:hover {
-  font-size: 1em;
-  /* Increase font size on hover */
-  transform: scale(1.1);
-  /* Slightly scale up the entire tag for emphasis */
-}
-
-.workspace-tab-header-container {
-  background-color: #000000;
-}
-
-.tree-item-self {
-  --nav-item-size: 1em;
-}
-
-.tree-item {
-  font-size: 14px;
+	color: var(--col-amoled-white);
 }

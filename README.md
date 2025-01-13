@@ -15,11 +15,26 @@ You can take a glance at these resources before starting to build a new Obsidian
 
 ### Desktop Screenshots
 
-![turkish](./src/img/turkish-text.png)
-![russian](./src/img/russian-text.png)
-![format-style](./src/img/format-styles.png)
-![fenced-code-block](./src/img/fenced-code-block.png)
-![callout](./src/img/callout-text.png)
+Code Block:
+![code-block](./src/img/code-block.png)
+
+Callouts:
+![callouts](./src/img/callouts.png)
+
+Graph:
+![graphs](./src/img/graph.png)
+
+Properties
+![properties](./src/img/properties.png)
+
+Lists
+![images](./src/img/lists.png)
+
+Text Formatting (bold,italic)
+![text-formatting](./src/img/text-formatting.png)
+
+External Links
+![external-links](./src/img/external-link.png)
 
 ### Android Screenshots
 
@@ -47,13 +62,3 @@ git clone https://github.com/gokayburuc/cyberdev-obsidian-theme.git
 Then rename the folder from `cyberdev-obsidian-theme` into `cyberdev`
 
 Open your Obsidian Vault and find the theme using `Open Settings>Apperance`. Select the theme. That's all.
-
-## Extras
-
-Spotify Playlist For Night Coders :
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1nJz21btM8FsZe5iMgQ0lZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-Spotify Playlist For Deephouse Lovers:
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2SehOh3NvfFLm4NMaHMm8d?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
